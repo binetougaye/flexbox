@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    background-color: coral;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    
+}
+.nav-items{
+    display: flex;
+    /* justify-content: space-between; */
+    margin-right: 20px;
+}
+.nav-items a{
+    text-decoration: none;
+    color: #FFF;
+}
+.nav-items li{
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+}
+.flexbox{
+    color: #FFF;
+    font-size: 60px;
+    font-weight: bold;
+    margin-left: 30px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.header{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    background-color: cornsilk;
+    height: 500px;
+}
+.header img{
+    max-width: 400px;
+}
+.left{
+    margin: 50px;
+}
+.picture{
+    margin: 50px;
+}
+.left h1{
+    color: chocolate;
+    text-shadow: 5px 5px 10px lightgrey ;
+    margin-bottom: 20px;
+}
+.left p{
+    color: chocolate;
+}
+.boxes{
+    background-color: burlywood;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+.box{
+    background-color:pink ;
+    color: white;
+    border: 1px solid whitesmoke;
+    /* min-width: 300px; */
+    height: 200px;
+    /* margin: 20px; */
+    padding: 10px;
+    line-height: 1.2;
+    box-shadow: 5px 5px 10px lightpink;
+}
+.box h2{
+    color: maroon;
+    padding: 5px;
+}
+.box i{
+    margin-left: 5px;
+}
+@media screen and (max-width:887px) {
+    
+    .boxes{
+        flex-wrap: wrap;
+    }
+    .box{
+        width: 80%;
+        line-height: normal;
+        margin: auto;
+    }
+    .box p{
+        font-size: 16px;
+    }
+    .header{
+        flex-direction: column-reverse;
+    }
+    .header img{
+        width: 100%;
+    }
+    .navbar{
+        position: relative;
+    }
+   .nav-items li{
+        justify-content: center;
+        font-size: 16px;
+        padding: 5px;
+   }
+   .flexbox{
+    font-size: 30px;
+   }
+   .picture{
+    margin: 0px;
+   }
+}
